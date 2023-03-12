@@ -1,0 +1,11 @@
+.ping {
+  max-width: 30rem;
+  margin: 0 auto;
+  background-color: azure;
+  .content {
+    background-color: antiquewhite;
+    .hoge {
+      background-color: aquamarine;
+    }
+  }
+}

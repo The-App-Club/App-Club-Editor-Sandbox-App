@@ -1,0 +1,7 @@
+- Reference
+  - [Next.js+TypeScript+CSS Modules+SCSS 環境（2022.01）](https://zenn.dev/noonworks/scraps/61091d5a367487)
+  - [tailwind css 製 loading animation samples](https://zenn.dev/tacrew/articles/ddf073e841165f)
+  - [Tailwind CSS でお手軽ローディングアニメーション](https://zenn.dev/catnose99/articles/19a05103ab9ec7)
+  - [Bringing Pattern Matching to TypeScript 🎨 Introducing TS-Pattern v3.0](https://dev.to/gvergnaud/bringing-pattern-matching-to-typescript-introducing-ts-pattern-v3-0-o1k)
+  - [return type for pattern matching function in typescript](https://stackoverflow.com/a/64959528)
+  - [Next.js で Markdown を表示](https://zenn.dev/hayato94087/articles/649e8d817165d8)

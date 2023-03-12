@@ -1,0 +1,15 @@
+.next
+out
+.gitignore
+.eslintignore
+.prettierignore
+.dockerignore
+.gitkeep
+*svg
+*png
+*wav
+*ogg
+*mp3
+*ico
+.env*
+yarn.lock
