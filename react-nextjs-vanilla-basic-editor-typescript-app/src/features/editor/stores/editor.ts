@@ -1,7 +1,10 @@
 import { atom } from 'recoil'
 
+export type EditorMode = 'edit' | 'preview'
+
 type Editor = {
   text: string
+  mode: EditorMode
 }
 
 const editorState = atom<Editor>({
@@ -9,6 +12,7 @@ const editorState = atom<Editor>({
   // https://markdown-it.github.io/
   default: {
     text: ``,
+    mode: 'edit',
   },
 })
 

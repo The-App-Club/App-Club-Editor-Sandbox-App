@@ -14,7 +14,7 @@ const useEditorControler = () => {
   const setEditor = useSetRecoilState(editorState)
   const [isCtrlEnter, setIsCtrlEnter] = useState(false)
 
-  const { text: editorText } = useMemo(() => {
+  const { text: editorText, mode } = useMemo(() => {
     return { ...activeEditor }
   }, [activeEditor])
 
@@ -72,6 +72,15 @@ const useEditorControler = () => {
     }
   }, [isCtrlEnter])
 
+  const toggleMode = useCallback(() => {
+    setEditor((prevState) => {
+      return {
+        ...prevState,
+        mode: prevState.mode === 'edit' ? 'preview' : 'edit',
+      }
+    })
+  }, [setEditor])
+
   useEffect(() => {
     if (!isCtrlEnter) {
       return
@@ -83,6 +92,7 @@ const useEditorControler = () => {
 
   return useMemo(() => {
     return {
+      mode,
       disabled,
       buttonLabelName,
       isCtrlEnter,
@@ -90,8 +100,10 @@ const useEditorControler = () => {
       handleKeyDown,
       handleInput,
       handlePublish,
+      toggleMode,
     }
   }, [
+    mode,
     disabled,
     buttonLabelName,
     isCtrlEnter,
@@ -99,6 +111,7 @@ const useEditorControler = () => {
     handleKeyDown,
     handleInput,
     handlePublish,
+    toggleMode,
   ])
 }
 
