@@ -159,8 +159,8 @@ const Toolbar = ({ editor }: { editor: Editor }) => {
     e.stopPropagation()
     e.preventDefault()
     editor.commands.toggleTaskList()
+    // https://github.com/ueberdosis/tiptap/issues/3411#issuecomment-1316125881
     // console.log(`cursor`, cursor)
-    // https://github.com/ueberdosis/tiptap/issues/3411
     // editor.commands.focus(cursor)
   }
 
